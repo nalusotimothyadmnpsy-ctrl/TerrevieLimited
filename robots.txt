@@ -1,0 +1,23 @@
+# robots.txt for Terrieve Website
+# Allow all search engine crawlers
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /DEPLOYMENT.md
+Disallow: /CONTRIBUTING.md
+
+# Sitemap
+Sitemap: https://terrieve.com/sitemap.xml
+
+# Specific crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Crawl-delay: 0

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Terrieve</title>
+  <meta name="description" content="Get in touch with Terrieve for partnerships, inquiries, product orders or to join our outgrower farmer program." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-placeholder.png" alt="Terrieve Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="founders.html">Meet Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="legal-compliance.html">Legal & Compliance</a></li>
+      </ul>
+      <a href="contact.html" class="contact-btn active">Contact</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="founders.html">Meet Us</a>
+    <a href="products.html">Products</a>
+    <a href="legal-compliance.html">Legal & Compliance</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<!-- PAGE HEADER -->
+<div class="page-header bg-image">
+  <div class="container">
+    <p class="page-header-label">Reach Out</p>
+    <h1>Get in Touch</h1>
+    <p>We'd love to hear from you. Reach out for partnerships, inquiries or collaborations.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Contact</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+<section class="contact-section section-pad">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Form -->
+      <div class="contact-form-card reveal">
+        <h2>Send Us a Message</h2>
+        <p>Fill in the form below and our team will get back to you within 1–2 business days.</p>
+
+        <!-- Form -->
+        <form id="contact-form" action="https://formspree.io/f/xeebgegr" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name / Organization</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Banda / Company Ltd" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+265 999 000 000" />
+          </div>
+
+          <div class="form-group">
+            <label for="purpose">Purpose of Inquiry</label>
+            <select id="purpose" name="purpose">
+              <option value="" disabled selected>Select a purpose…</option>
+              <option value="product-inquiry">Product Inquiry</option>
+              <option value="partnership">Business Partnership</option>
+              <option value="outgrower">Join Outgrower Program</option>
+              <option value="custom-product">Custom Product Request</option>
+              <option value="media">Media / Press</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry, requirements or how we can help…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="submit-btn" style="width:100%; justify-content:center;">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success" id="form-success">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for reaching out. Our team will get back to you within 1–2 business days.</p>
+        </div>
+      </div>
+
+      <!-- Info Panel -->
+      <div class="contact-info-panel">
+
+        <!-- Contact Details -->
+        <div class="contact-info-card reveal reveal-delay-1">
+          <h3>Contact Information</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15.34z"/>
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <label>Phone</label>
+              <p>0889892624</p>
+              <p style="font-size:0.78rem; color:var(--text-muted);">+265 885 40 39 50</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <label>Email</label>
+              <p>terrevielimited@gmail.com</p>
+              <p style="font-size:0.78rem; color:var(--text-muted);">terrevielimited@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <label>Business Hours</label>
+              <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+              <p style="font-size:0.78rem; color:var(--text-muted);">Saturday: 8:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-info-card reveal reveal-delay-2">
+          <h3>Find Us</h3>
+          <div class="map-placeholder">
+            <!-- Placeholder map — replace with actual embed when live -->
+            <div style="width:100%; height:100%; background:linear-gradient(135deg,var(--green-pale),var(--gray-light)); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; border-radius:var(--radius-md);">
+              <svg viewBox="0 0 24 24" width="40" height="40" stroke="var(--green-mid)" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <p style="font-size:0.78rem; color:var(--text-muted); text-align:center; padding:0 16px;">Chikwawa, Malawi<br><span style="color:var(--green-mid); font-weight:600;">Map will load here</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="contact-info-card reveal reveal-delay-3">
+          <h3>Follow Us</h3>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:16px;">Stay connected for updates, insights and news about our work.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FAQ STRIP
+     ============================================================ -->
+<section class="section-pad" style="background:var(--off-white);">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Quick answers to the questions we get asked most.</p>
+    </div>
+
+    <div class="faq-grid">
+
+      <div class="contact-info-card reveal reveal-delay-1" style="padding:28px;">
+        <h4 style="font-size:0.95rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+          <span style="width:28px; height:28px; background:var(--green-pale); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:800; color:var(--green-mid); flex-shrink:0;">Q</span>
+          How do I become an outgrower farmer?
+        </h4>
+        <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; padding-left:38px;">
+          Simply contact us through this form or call our office. Our agronomy team will schedule a visit, assess your farm and walk you through the registration and onboarding process.
+        </p>
+      </div>
+
+      <div class="contact-info-card reveal reveal-delay-2" style="padding:28px;">
+        <h4 style="font-size:0.95rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+          <span style="width:28px; height:28px; background:var(--green-pale); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:800; color:var(--green-mid); flex-shrink:0;">Q</span>
+          What is the minimum order quantity for products?
+        </h4>
+        <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; padding-left:38px;">
+          Minimum order quantities vary by product. For HQCF, minimum orders start at one metric tonne. Please contact our sales team for detailed pricing and MOQ information.
+        </p>
+      </div>
+
+      <div class="contact-info-card reveal reveal-delay-1" style="padding:28px;">
+        <h4 style="font-size:0.95rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+          <span style="width:28px; height:28px; background:var(--green-pale); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:800; color:var(--green-mid); flex-shrink:0;">Q</span>
+          Do you offer product samples?
+        </h4>
+        <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; padding-left:38px;">
+          Yes, we provide product samples for qualified buyers and industry partners. Request a sample through our contact form specifying the product of interest.
+        </p>
+      </div>
+
+      <div class="contact-info-card reveal reveal-delay-2" style="padding:28px;">
+        <h4 style="font-size:0.95rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+          <span style="width:28px; height:28px; background:var(--green-pale); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:800; color:var(--green-mid); flex-shrink:0;">Q</span>
+          Can you supply custom product formulations?
+        </h4>
+        <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; padding-left:38px;">
+          Absolutely. We work with businesses to develop tailored cassava-based formulations. Reach out to our technical team to discuss your specific requirements and application needs.
+        </p>
+      </div>
+
+      <div class="contact-info-card reveal reveal-delay-1" style="padding:28px;">
+        <h4 style="font-size:0.95rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+          <span style="width:28px; height:28px; background:var(--green-pale); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:800; color:var(--green-mid); flex-shrink:0;">Q</span>
+          What certifications do your products hold?
+        </h4>
+        <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; padding-left:38px;">
+          Our products meet national quality standards. We are currently pursuing ISO and food safety certifications. Certificates of analysis are provided with every order shipment.
+        </p>
+      </div>
+
+      <div class="contact-info-card reveal reveal-delay-2" style="padding:28px;">
+        <h4 style="font-size:0.95rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+          <span style="width:28px; height:28px; background:var(--green-pale); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:800; color:var(--green-mid); flex-shrink:0;">Q</span>
+          Do you deliver or do buyers collect?
+        </h4>
+        <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; padding-left:38px;">
+          We offer both delivery and ex-factory collection options. Delivery logistics and pricing depend on order size and destination. Contact us for a delivery quote.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA BANNER -->
+<section class="cta-banner bg-image">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-icon-wrap">
+        <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </div>
+      <div class="cta-text">
+        <h2>Ready to Become a Partner?</h2>
+        <p>Join our growing network of farmers, buyers and industry partners across the region.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#contact-form" class="btn btn-primary">Send a Message</a>
+        <a href="products.html" class="btn btn-outline-white">Our Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">
+          <img src="images/logo-placeholder.png" alt="Terrieve Logo" class="footer-brand-logo-img" />
+        </div>
+        <p class="footer-brand-desc">Growing Cassava. Creating Value. Transforming Communities. Committed to innovation, sustainability and empowering farmers.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="footer-social-link"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="footer-social-link"><svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          <a href="#" class="footer-social-link"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html#hqcf">HQCF</a></li>
+          <li><a href="products.html#animal-feed">Animal Feed</a></li>
+          <li><a href="products.html#starch">Cassava Starch (Soon)</a></li>
+          <li><a href="products.html#industrial">Industrial Products (Soon)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for the latest updates and insights.</p>
+        <form class="newsletter-form" novalidate>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Terrieve. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

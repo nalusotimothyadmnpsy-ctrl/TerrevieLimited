@@ -1,0 +1,32 @@
+{
+  "name": "terrieve-website",
+  "version": "1.0.0",
+  "description": "Premium, responsive agro-processing website for Terrieve",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'Add tests if needed'"
+  },
+  "keywords": [
+    "agro-processing",
+    "cassava",
+    "website",
+    "responsive",
+    "premium"
+  ],
+  "author": "Terrieve",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/terrieve-website.git"
+  },
+  "devDependencies": {
+    "cssnano": "^5.1.0",
+    "postcss": "^8.4.0",
+    "terser": "^5.14.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
